@@ -4,7 +4,7 @@
 
 ## Example
 ```rust
-use f1_telmetry_client::{Telemetry, packet::Packet};
+use f1_telemetry_client::{Telemetry, packet::Packet};
 use async_std::task;
 
 fn main() {
