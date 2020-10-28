@@ -9,7 +9,7 @@ use async_std::task;
 
 fn main() {
     task::block_on(async {
-        let telemetry = Telemetry::new("127.0.0.1", 20777).await.unwrap();
+        let telemetry = Telemetry::new("192.168.1.11", 20777).await.unwrap();
         
         loop {
             match telemetry.next().await {
@@ -28,8 +28,10 @@ fn main() {
         }
     })
 }
-
 ```
+
+### Enable Telemetry Setting
+<img width="712" alt="web-checkssl" src="https://user-images.githubusercontent.com/6572635/97430345-5a1ca380-194b-11eb-929f-99012adb699e.png">
 
 ### UDP Specifications
 - 2020 - https://forums.codemasters.com/topic/50942-f1-2020-udp-specification/
